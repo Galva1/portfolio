@@ -1,52 +1,146 @@
 <!DOCTYPE html>
-<html lang="en"> 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Portfólio</title>
-    </head>
-    <body>
-        <header class="header-container">
-            <div class="header">
-                <div class="checkbox-container">
-                    <div class="checkbox-wrapper">
-                        <input type="checkbox" id="toggle">
-                        <label class="checkbox" for="toggle">
-                            <div class="trace"></div>
-                            <div class="trace"></div>
-                            <div class="trace"></div>
-                        </label>
-                        <div class="menu"></div>
-                        <nav class="menu-items">
-                            <ul>
-                               <li>
-                                    <a href="#">Home</a>
-                               </li>
-                               <li>
-                                    <a href="#">Sobre</a>
-                               </li>
-                               <li>
-                                     <a href="#">Projetos</a>
-                               </li>
-                            </ul>
-                        </nav>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+    <title>Potfólio Galvão</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">  
+</head>
+<body>
+    <!--HEADER DO PROJETO-->
+    <header>
+
+        <div class="avatar-user">
+            <img src="imgs/perfil.jpg" alt="">
+            <h3 class="name"> Gabriel Galvão</h3>
+            <p class="postagem">Ciência e Tecnologia</p>
+        </div>
+        <!--NAV BAR-->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- MENU BURGUER -->
+    <div class= 'fas fa-bars' id="menu"></div>
+
+    <!-- HOME -->
+
+    <section class="home" id="home">
+        <h3>Seja bem vindo</h3>
+        <h1> Me chamo <span>Gabriel Galvão</span>, 21 anos</h1>
+        <p>Formação técnica integrada em Programação de Jogos Digitais pelo IFRN</p>
+        <p>Graduando em Ciência e Tecnologia pela UFRN</p>
+        <a href="#sobre"><button class="btn">Saiba mais<i class="fas fa-user"></i></button></a>
+    </section>
+
+    <!-- SOBRE -->
+
+    <section class="sobre" id="sobre">
+
+        <h1 class='heading'><span>Sobre </span></h1>
+
+        <div class="row">
+            <div class="info">
+                <h3><span>Desenvolvedor WEB</span></h3>
+                <h3><span>Front-end com HTML e CSS</span></h3>
+                <h3><span>Experiêcia nas linguagens: </span>Python, C#, Java e JavaScript</h3>
+                <h3><span>Conhecimento nas engines: </span>Unity e Construct</h3>
+                <h3><span>Projeto </span>The last Human<span>conclusão de curso técnico, publicado no Encontro Sobre Jogos e Mobile Learning, 2020, Coimbra: Centro de estudos Interdisciplinares do Século 20 (CEIS20).</span> </h3>
+                <a href="CURRICULO-GALVAO.pdf"><button class='btn'> Download CV <i class="fas fa-dowload"></i></button></a>
+            </div>
+            <div class="sobre_imagens">
+                <ul>
+                    <li><img src="imgs/Construct-Mark.png"></li>
+                    <li><img src="imgs/css-3.png"></li>
+                    <li><img src="imgs/html.png"></li>
+                    <li><img src="imgs/js.png"></li>
+                    <li><img src="imgs/Python-Mark.png"></li>
+                    <li><img src="imgs/Unity-Mark.png"></li>
+                </ul>
+            </div>
+            
+        </div>
+
+
+    </section>
+
+
+    <!-- PORTFOLIO -->
+
+    <section class="portfolio" id="portfolio">
+
+        <h1 class='heading'><span>Portfólio </span></h1>
+
+        <div class="jogos" id="jogos-id">
+            <h1 class="titulos__1">Jogos</h1>
+            <ul class="jogos__lista">
+                <!-- The Last Human -->
+                <li class="jogos__itens">
+                    <p class="jogos__nome">The Last Human</p>
+                    <a href="https://ronaque.github.io/The%20Last%20Human/" target="_blank"><img
+                            src="imgs/The-Last-Human.png" alt=""></a>
+                    <p class="jogos__descricao">Jogo desenvolvido para o trabalho de Conclusão de Curso no IFRN</p>
+                </li>
+                <!-- NSM -->
+                <li class="jogos__itens">
+                    <p class="jogos__nome">NSM THE GAME</p>
+                    <a href="https://lemuelmarques.github.io/NSMTHEGAME/" target="_blank"><img
+                            src="imgs/NSM.png" alt=""></a>
+                    <p class="jogos__descricao">Jogo desenvolvido durante o primeiro semestre da matéria Motores de
+                        Jogos durante o IFRN</p>
+                </li>
+                <!-- MCWWF -->
+                <li class="jogos__itens">
+                    <p class="jogos__nome">MCWWF</p>
+                    <a href="https://ronaque.github.io/MCWWF/" target="_blank"><img
+                            src="imgs/MCWWF.png" alt=""></a>
+                    <p class="jogos__descricao">Jogo desenvolvido durante o segundo semestre da matéria Motores de
+                        Jogos durante o IFRN</p>
+                </li>
+    
+            </ul>
+        </div>
+
+
+
+        <!-- CONTATO -->
+
+        <section class="contato" id="contato">
+
+            <h1 class="heading"><span>CONTATOS</span></h1>
+                <div class="row">
+                    <div class="info">
+                        <h3><span>Email: </span>gabrielgm07@hotmail.com</h3>
+                        <h3><span>Telefone: </span>84 9 33003833</h3>
                     </div>
                 </div>
+        </section>
 
-            </div>
-            <h1>Gabriel Galvão</h1>
-            <h2>Desenvolvedor Web</h2>
-            <div class="social-media">
-                <a href="#">Linkedin</a>
-                <a href="#">Github</a>
-            </div>
-        </header>
-        <main class="container">
 
-        </main>
-        <footer class="footer">
 
-        </footer>
-    </body>
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>"></script>
+    <script src="script.js"></script>
+</body>
 </html>
